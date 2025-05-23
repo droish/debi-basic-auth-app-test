@@ -19,10 +19,10 @@ const SignupForm = () => {
         setError('');
         setSuccess('');
         try {
-            // await axios.post('http://localhost:5000/api/signup', {
-            //     username,
-            //     password,
-            // });
+            await axios.post('http://localhost:5000/users', {
+                username,
+                password,
+            });
             setSuccess('Signed up successfully!');
             setTimeout(() => {
                 router.replace('/removeUser');
