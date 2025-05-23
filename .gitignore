@@ -1,0 +1,27 @@
+# Node modules
+node_modules/
+# Expo
+.expo/
+dist/
+web-build/
+.expo-shared/
+# macOS
+.DS_Store
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# Environment files
+.env
+.env.*
+# Metro
+.metro-cache/
+# VSCode
+.vscode/
+# TypeScript build info
+*.tsbuildinfo
+# Android/iOS build
+android/
+ios/
+# Expo preview QR
+*.expo
