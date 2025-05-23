@@ -1,10 +1,7 @@
 module.exports = {
-  purge: ['./app/**/*.{js,jsx,ts,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./components/**/*.{js,jsx,ts,tsx}", "./app/**/*.{js,jsx}"],
+  presets: [require("nativewind/preset")],
   theme: {
-    extend: {},
-  },
-  variants: {
     extend: {},
   },
   plugins: [],
