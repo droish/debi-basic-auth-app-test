@@ -1,42 +1,14 @@
+import React from 'react';
+import { View, Text } from 'react-native';
 import SignupForm from '../components/SignupForm';
-import { View, Text, StyleSheet } from 'react-native';
 
-const Signup = () => {
-    return (
-        <View style={styles.container}>
-            <View style={styles.formContainer}>
-                <Text style={styles.title}>Sign Up</Text>
-                <SignupForm />
-            </View>
-        </View>
-    );
-};
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#f3f4f6',
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    formContainer: {
-        backgroundColor: '#fff',
-        padding: 32,
-        borderRadius: 16,
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.1,
-        shadowRadius: 8,
-        elevation: 4,
-        width: '90%',
-        maxWidth: 400,
-    },
-    title: {
-        fontSize: 24,
-        fontWeight: 'bold',
-        marginBottom: 24,
-        textAlign: 'center',
-    },
-});
-
-export default Signup;
+export default function Signup() {
+  return (
+    <View className="flex-1 bg-gray-100 justify-center items-center">
+      <View className="bg-white p-8 rounded-2xl shadow-md w-[90%] max-w-[400px]">
+        <Text className="text-2xl font-bold mb-6 text-center">Sign Up</Text>
+        <SignupForm />
+      </View>
+    </View>
+  );
+}

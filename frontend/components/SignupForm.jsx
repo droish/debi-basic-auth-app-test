@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { View, TextInput, Button, Text, StyleSheet } from 'react-native';
-import axios from 'axios'; 
+import { View, TextInput, Button, Text } from 'react-native';
+import axios from 'axios';
 import { useRouter } from 'expo-router';
 
-const SignupForm = () =>    {
+const SignupForm = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -34,17 +34,17 @@ const SignupForm = () =>    {
 
     return (
         <View>
-            {error ? <Text style={styles.error}>{error}</Text> : null}
-            {success ? <Text style={styles.success}>{success}</Text> : null}
+            {error ? <Text className="text-red-500 mb-3 text-center">{error}</Text> : null}
+            {success ? <Text className="text-green-600 mb-3 text-center">{success}</Text> : null}
             <TextInput
-                style={styles.input}
+                className="border border-gray-300 rounded-lg p-3 mb-4 bg-gray-50"
                 placeholder="Username"
                 value={username}
                 onChangeText={setUsername}
                 autoCapitalize="none"
             />
             <TextInput
-                style={styles.input}
+                className="border border-gray-300 rounded-lg p-3 mb-4 bg-gray-50"
                 placeholder="Password"
                 value={password}
                 onChangeText={setPassword}
@@ -54,26 +54,5 @@ const SignupForm = () =>    {
         </View>
     );
 };
-
-const styles = StyleSheet.create({
-    input: {
-        borderWidth: 1,
-        borderColor: '#d1d5db',
-        borderRadius: 8,
-        padding: 12,
-        marginBottom: 16,
-        backgroundColor: '#f9fafb',
-    },
-    error: {
-        color: 'red',
-        marginBottom: 12,
-        textAlign: 'center',
-    },
-    success: {
-        color: 'green',
-        marginBottom: 12,
-        textAlign: 'center',
-    },
-});
 
 export default SignupForm;
