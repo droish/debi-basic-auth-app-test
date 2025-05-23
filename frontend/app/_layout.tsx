@@ -1,2 +1,7 @@
-// If using Expo Router, import your CSS file in the app/_layout.tsx file
+import React from 'react';
+import { Tabs } from 'expo-router';
 import '../global.css';
+
+export default function RootLayout() {
+  return <Tabs />;
+}
