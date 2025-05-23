@@ -4,7 +4,6 @@ import axios from 'axios';
 import { useRouter } from 'expo-router';
 
 const SignupForm = () =>    {
-    const [email, setEmail] = useState('');
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -38,14 +37,6 @@ const SignupForm = () =>    {
         <View>
             {error ? <Text style={styles.error}>{error}</Text> : null}
             {success ? <Text style={styles.success}>{success}</Text> : null}
-            <TextInput
-                style={styles.input}
-                placeholder="Email"
-                value={email}
-                onChangeText={setEmail}
-                autoCapitalize="none"
-                keyboardType="email-address"
-            />
             <TextInput
                 style={styles.input}
                 placeholder="Username"
