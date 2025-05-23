@@ -21,7 +21,6 @@ export class UsersController {
     try {
       const user = await this.usersService.signup(dto);
       console.log('User created:', user);
-      console.log('Current users: ', await this.usersService.findAll());
       return { id: user.id, username: user.username };
     } catch (err) {
       throw new HttpException(err.message, HttpStatus.BAD_REQUEST);
