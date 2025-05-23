@@ -19,6 +19,7 @@ const SignupForm = () => {
         setError('');
         setSuccess('');
         try {
+            // TODO: Use HTTPS for avoid sending password in plain text
             await axios.post('http://localhost:5000/users', {
                 username,
                 password,
