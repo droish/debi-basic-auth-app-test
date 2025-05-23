@@ -11,7 +11,7 @@ const SignupForm = () =>    {
     const router = useRouter();
 
     const handleSignup = async () => {
-        if (!email || !username || !password) {
+        if (!username || !password) {
             setError('All fields are required.');
             setSuccess('');
             return;
@@ -20,7 +20,6 @@ const SignupForm = () =>    {
         setSuccess('');
         try {
             // await axios.post('http://localhost:5000/api/signup', {
-            //     email,
             //     username,
             //     password,
             // });
