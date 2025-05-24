@@ -61,6 +61,19 @@ A simple fullstack authentication app with a React Native (Expo Go) frontend and
 
 ---
 
+## Screenshots
+
+### Sign Up Screen
+
+![Sign Up Screen](assets/signupscreen.png)
+
+### Remove User Screen
+
+![Remove User Screen](assets/removeuserscreen.png)
+
+---
+
+
 ## Future Work
 
 - **HTTPS:**  
