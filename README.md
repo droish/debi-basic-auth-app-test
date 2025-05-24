@@ -83,5 +83,7 @@ Currently, the authentication is managed with in-memory repository. Take a look 
   Add Docker support for easy deployment and consistent environments.
 - **Testing:**  
   Add unit and integration tests for both backend and frontend.
+- **DB:**
+  Add support in relational database.
 
 ---
