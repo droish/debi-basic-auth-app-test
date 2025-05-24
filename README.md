@@ -51,7 +51,7 @@ Currently, the authentication is managed with in-memory repository. Take a look 
 ## Notes
 
 - **If using a real device:**  
-  Update all backend URLs in the frontend code from `localhost` to your computer's local IP (e.g., `http://192.168.1.100:5000`).
+  Update all backend URLs in the frontend code from current written IP to your computer's local IP (e.g., `http://192.168.1.100:5000`).
 - **CORS:**  
   The backend is configured to allow requests from the Expo frontend.
 - **User List Endpoint (Development Only):**  
@@ -83,5 +83,7 @@ Currently, the authentication is managed with in-memory repository. Take a look 
   Add Docker support for easy deployment and consistent environments.
 - **Testing:**  
   Add unit and integration tests for both backend and frontend.
+- **DB:**
+  Add support in relational database.
 
 ---
