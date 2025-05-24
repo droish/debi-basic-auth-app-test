@@ -68,7 +68,7 @@ Currently, the authentication is managed with in-memory repository. Take a look 
 
 ### Remove User Screen
 
-![Remove User Screen](assets/RemoveUserScreen.jpeg)
+![Remove User Screen](assets/removeUserScreen.jpeg)
 
 ---
 
