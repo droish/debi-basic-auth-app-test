@@ -1,6 +1,7 @@
 # Debi Basic Auth App
 
 A simple fullstack authentication app with a React Native (Expo Go) frontend and a Node.js (NestJS) backend.
+Currently, the authentication is managed with in-memory repository. Take a look at `Future Work` for more thoughts.
 
 ---
 
@@ -49,8 +50,6 @@ A simple fullstack authentication app with a React Native (Expo Go) frontend and
 
 ## Notes
 
-## Notes
-
 - **If using a real device:**  
   Update all backend URLs in the frontend code from `localhost` to your computer's local IP (e.g., `http://192.168.1.100:5000`).
 - **CORS:**  
@@ -65,11 +64,11 @@ A simple fullstack authentication app with a React Native (Expo Go) frontend and
 
 ### Sign Up Screen
 
-![Sign Up Screen](assets/signupscreen.png)
+![Sign Up Screen](assets/SignUpScreen.jpeg)
 
 ### Remove User Screen
 
-![Remove User Screen](assets/removeuserscreen.png)
+![Remove User Screen](assets/RemoveUserScreen.jpeg)
 
 ---
 
