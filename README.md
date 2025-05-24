@@ -64,11 +64,11 @@ Currently, the authentication is managed with in-memory repository. Take a look 
 
 ### Sign Up Screen
 
-![Sign Up Screen](assets/signupscreen.png)
+![Sign Up Screen](assets/SignUpScreen.jpeg)
 
 ### Remove User Screen
 
-![Remove User Screen](assets/removeuserscreen.png)
+![Remove User Screen](assets/RemoveUserScreen.jpeg)
 
 ---
 
