@@ -13,7 +13,9 @@ export default function RemoveUser() {
     }
     setMessage('');
     try {
-      await axios.delete(`http://localhost:5000/users/${username}`);
+      // TODO: Use HTTPS for avoid sending password in plain text
+      // TODO: Change the IP address to the server's IP address
+      await axios.delete(`http://192.168.1.173:5000/users/${username}`);
       setMessage('User removed!');
     } catch (err) {
       setMessage(err.response?.data?.message || 'Failed to remove user.');

@@ -20,7 +20,8 @@ const SignupForm = () => {
         setSuccess('');
         try {
             // TODO: Use HTTPS for avoid sending password in plain text
-            await axios.post('http://localhost:5000/users', {
+            // TODO: Change the IP address to the server's IP address
+            await axios.post('http://192.168.1.173:5000/users', {
                 username,
                 password,
             });
