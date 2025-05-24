@@ -74,7 +74,8 @@ Currently, the authentication is managed with in-memory repository. Take a look 
 
 
 ## Future Work
-
+- **Frontend:**
+  Implement a form generic component instead of specific form for each use-case.
 - **HTTPS:**  
   Add HTTPS support for secure communication between frontend and backend.
 - **Password Hashing:**  
