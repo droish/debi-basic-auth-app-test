@@ -57,6 +57,7 @@ A simple fullstack authentication app with a React Native (Expo Go) frontend and
   The backend is configured to allow requests from the Expo frontend.
 - **User List Endpoint (Development Only):**  
   A `GET /users` endpoint is available to view all generated users. This is for development purposes only and should be removed or secured in production.
+- **Username is case-sensitive**
 
 ---
 
