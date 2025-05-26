@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, TextInput, Button, Text } from 'react-native';
 import axios from 'axios';
 import { useRouter } from 'expo-router';
+import { BACKEND_SERVER } from '../constants/backend';
 
 const SignupForm = () => {
     const [username, setUsername] = useState('');
@@ -21,7 +22,7 @@ const SignupForm = () => {
         try {
             // TODO: Use HTTPS for avoid sending password in plain text
             // TODO: Change the IP address to the server's IP address
-            await axios.post('http://192.168.1.173:5000/users', {
+            await axios.post(`http://${BACKEND_SERVER}:5000/users`, {
                 username,
                 password,
             });

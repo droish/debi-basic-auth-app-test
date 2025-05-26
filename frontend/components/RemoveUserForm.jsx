@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, TextInput, Button, Text } from 'react-native';
 import axios from 'axios';
+import { BACKEND_SERVER } from '../constants/backend';
 
 export default function RemoveUserForm() {
   const [username, setUsername] = useState('');
@@ -14,7 +15,7 @@ export default function RemoveUserForm() {
     setMessage('');
     try {
       // TODO: switch to HTTPS and real server URL
-      await axios.delete(`http://192.168.1.173:5000/users/${username}`);
+      await axios.delete(`http://${BACKEND_SERVER}:5000/users/${username}`);
       setMessage('User removed!');
       setUsername('');
     } catch (err) {
